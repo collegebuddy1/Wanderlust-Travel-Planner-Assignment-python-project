@@ -1,0 +1,9 @@
+Flask
+Flask-SQLAlchemy
+mysql
+mysql-connector
+python-dateutil
+python-multipart
+SQLAlchemy
+greenlet
+gunicorn

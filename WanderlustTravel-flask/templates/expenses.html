@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Expenses</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Manage Expenses</h1>
+    
+    <!-- Add expense form -->
+    <form method="POST" action="/expenses">
+        <label for="itinerary_id">Itinerary ID:</label>
+        <input type="number" id="itinerary_id" name="itinerary_id" required>
+        
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+        
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" required>
+        
+        <button type="submit">Add Expense</button>
+    </form>
+    
+    <!-- List of expenses -->
+    <h2>Expenses:</h2>
+    <ul>
+        {% for expense in expenses %}
+            <li>ID: {{ expense.id }}, Itinerary ID: {{ expense.itinerary_id }}, Amount: {{ expense.amount }}, Category: {{ expense.category }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* Reset some default styles */
+body, h1, h2, ul, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Global styles */
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Form styles */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* List styles */
+ul {
+    margin-top: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Section styles */
+h2 {
+    color: #4CAF50;
+    margin-top: 30px;
+}
+
+/* Message styles */
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+}
+
+.error {
+    color: #FF0000;
+}
